@@ -1,0 +1,22 @@
+"""
+1. Basic Function Definition
+Task: Write a Python function named greet that takes a person's name as an argument and prints a greeting message.
+
+2. Function with Return Value
+Task: Create a function add_numbers that takes two numbers as parameters and returns their sum.
+ Example Input:
+
+3. Function with Default Parameters
+Task: Define a function multiply that takes two numbers and returns their product. If the second number is not provided, it should default to 1.
+
+4. Function with Variable Number of Arguments
+Task: Write a function concatenate_strings that takes any number of string arguments and returns a single string that is the concatenation of all the input strings.
+
+5. Function with Keyword Arguments
+Task: Create a function student_info that accepts a student's name, age, and grade as keyword arguments and prints a formatted string displaying this information.
+
+7. Prime Number Checker Function
+Task: Write a Python function is_prime(number) that takes an integer as input and returns True if the number is prime, otherwise returns False.
+Then, ask the user to input a number and use this function to check if it is prime.
+
+"""

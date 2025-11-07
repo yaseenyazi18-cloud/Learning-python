@@ -14,24 +14,42 @@ Expected Outcome: The program should demonstrate the ability to manipulate lists
 """
 
 values = []
-i=1
-while i<=10 :
-    num = int(input("Enter a number : "))
+i=0
+while i<=4 :
+    num = input(f"Enter a number : ")
     values.append(num)
     i=i+1
 print(values)
 
 #Add a new element at the end of the list.
-values.append(int(input("Enter adding value : ")))
+values.append(input(f"Enter adding value : "))
 print(values)
 
 #Insert an element at a specific position.
+
 values.insert(1,77)
-print(values)
+print(f"insert : {values}")
 
 #Remove an element by value and by index.
-values.remove(0)
+values.remove(input("Enter remove value :"))
 print(values)
 
 #Sort the list in ascending and descending order.
-values.sort
+sort_values=[3,2,6,77,99,22,3,1,3,33,2]
+print("Ascending:")
+sort_values.sort()
+print(sort_values)
+print("DescenDing:")
+sort_values.sort(reverse = True)
+
+#Reverse the list. 
+values.reverse()
+print(f"reverse list : {values}")
+
+ # find the index of a specific element
+search = (input(f"Enter searching element :"))
+index_value = values.index(search)
+print(index_value )
+
+
+   
