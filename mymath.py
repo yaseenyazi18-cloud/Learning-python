@@ -57,5 +57,12 @@ def multply( num1 , num2 ):
     multply = num1 * num2
     return multply
 def divide( num1 , num2 ):
-    divide = num1 / num2
-    return divide
+    try:
+       divide = num1 / num2
+       return divide
+    except ZeroDivisionError:
+      return "Error: value Cannot divide by zero.pleace enter new vlue."
+ 
+      
+
+    
