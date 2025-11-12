@@ -36,7 +36,7 @@ if __name__ == '__main__':
     val1.deposite()
     val1.withdraw()
     val1.display_balance()
-
+0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
 
 
 
