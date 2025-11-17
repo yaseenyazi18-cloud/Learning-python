@@ -82,6 +82,8 @@ for i in range(len(buttons)):
                         font=('Arial', 16), width=3, height=1)
         btn.grid(row=i, column=j, padx=10, pady=10)
         btn.bind('<Button-1>', click)
+        
+       
 
 
 window.mainloop()
