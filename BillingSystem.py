@@ -1,6 +1,37 @@
 import tkinter as tk
 from tkinter import ttk
 
+def calculte():
+    quantity = float(Quantity_text.get())
+    price = float(Price_text.get())
+    total = quantity * price
+    Total_text.delete(0,tk.END)
+    Total_text.insert(0, total)
+
+def addTable():
+    grand_total = 0
+    item = item_text.get()
+    quantity = Quantity_text.get()
+    price = Price_text.get()
+    total = Total_text.get()
+
+    table.insert("", tk.END, values=(item, quantity, price, total))
+
+
+    item_text.delete(0, tk.END)
+    Quantity_text.delete(0, tk.END)
+    Price_text.delete(0, tk.END)
+    Total_text.delete(0,tk.END)
+
+    for item in table.get_children():
+        values = table.item(item,"values")
+        int_total = float(values[3])
+        grand_total += int_total
+        g_total.configure(text=f"Grand Total: {grand_total}")
+
+
+
+
 
 
 
@@ -41,9 +72,10 @@ Total_text = tk.Entry(item_details, font=('Arial',15), width=15, justify='right'
 Total_text.grid(row=1,column=3)
 
 
-calc_button = tk.Button(item_details, text='Calculate', font=('Arial',15), bg='blue',fg='white')
+calc_button = tk.Button(item_details, text='Calculate', font=('Arial',15), bg='blue',fg='white', command=calculte)
 calc_button.grid(row=2, column=2, padx=10, pady=10)
-add_button = tk.Button(item_details, text='Add to Total', font=('Arial',15), bg='blue',fg='white')
+
+add_button = tk.Button(item_details, text='Add to Total', font=('Arial',15), bg='blue',fg='white', command=addTable)
 add_button.grid(row=2, column=3, padx=10, pady=10)
 
 table = ttk.Treeview(item_details, columns=('item', 'qty', 'price', 'total'), show='headings')

@@ -1,16 +1,16 @@
 from PIL import Image
 
-def resizeImage(input_img, output_img, new_size):
+def resizeImage(input_img, output_img, size):
     orginal = Image.open(input_img)
-    resized = orginal.resize(new_size)
+    resized = orginal.resize(size)
     resized.save(output_img)
 
 
-input_img = './qwerty.jpg'
+input_img = 'qwerty.jpg'
 output_img = 'output.jpg'
 new_size = (200,230)
 
-resizeImage(input_img=input_img, output_img=output_img, new_size=new_size)
+resizeImage(input_img=input_img, output_img=output_img, size=new_size)
 # import os
 # from PIL import Image
 #
