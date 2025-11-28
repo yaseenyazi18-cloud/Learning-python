@@ -7,6 +7,8 @@ def resizeImage(input_img, output_img, size):
 
 
 input_img = 'qwerty.jpg'
+
+
 output_img = 'output.jpg'
 new_size = (200,230)
 
